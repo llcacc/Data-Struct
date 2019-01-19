@@ -24,3 +24,4 @@ void DListErase(Node* pos);
 void DListRemove(Node* p, DataType data);
 void DListRemoveAll(Node* p, DataType data);
 
+void ListDestory(Node** p);

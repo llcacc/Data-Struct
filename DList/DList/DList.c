@@ -131,3 +131,17 @@ void DListRemoveAll(Node* p, DataType data)
 		}
 	}
 }
+void ListDestory(Node** p)
+{
+	assert(p);
+	Node* cur = *p;
+	cur = cur->Next;
+	while (cur != *p)
+	{
+		Node* pos = cur;
+		cur = cur->Next;
+		free(pos);
+	}
+	free(*p);
+	*p = NULL;
+}

@@ -24,12 +24,12 @@ int main()
 	DListPushBack(d, 1);
 	DListPushBack(d, 2);
 	DListPushBack(d, 3);
-	DListPushBack(d, 4);
+	/*DListPushBack(d, 4);
 	DListPushBack(d, 3);
 	DListPushBack(d, 4);
-	DListPushBack(d, 3);
-	DListShow(d);
-	DListRemoveAll(d, 3);
+	DListPushBack(d, 3);*/
+	/*DListShow(d);
+	DListRemoveAll(d, 3);*/
 	/*DListRemove(d,3);*/
 	/*DListErase(DListFind(d, 3));*/
 	/*DListPopFront(d);*/
@@ -44,6 +44,7 @@ int main()
 
 
 	DListShow(d);
+	ListDestory(&d);
 	system("pause");
 	return 0;
 }
